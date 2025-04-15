@@ -36,14 +36,14 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
-click = "^8.1.7"
-rich = "^13.9.1"
+click = "^8.1.8"
+rich = "^14.0.0"
 {%- endif %}
-pydantic = "^2.9.2"
+pydantic = "^2.11.3"
 
 [tool.poetry.group.dev.dependencies]
 {%- if cookiecutter.use_ruff == 'y' %}
-ruff = "^0.7.3"
+ruff = "^0.11.5"
 {%- else %}
 black = "^23.10.1"
 isort = "^5.12.0"
