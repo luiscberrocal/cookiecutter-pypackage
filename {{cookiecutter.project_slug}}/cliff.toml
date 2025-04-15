@@ -1,10 +1,6 @@
 # git-cliff ~ default configuration file
 # https://git-cliff.org/docs/configuration
-#
-# Lines starting with "#" are comments.
-# Configuration options are organized into tables and keys.
-# See documentation for more information on available options.
-
+{% raw %}
 [changelog]
 # template for the changelog header
 header = """
@@ -83,3 +79,4 @@ filter_commits = false
 topo_order = false
 # sort the commits inside sections by oldest/newest order
 sort_commits = "oldest"
+{% endraw}
